@@ -1,3 +1,7 @@
+import sys, os
+# Add the project root directory to Python’s module search path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from app import add
 
 def test_add():
